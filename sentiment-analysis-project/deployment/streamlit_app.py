@@ -21,7 +21,7 @@ from datetime import datetime
 # PAGE CONFIGURATION
 # ============================================================================
 st.set_page_config(
-    page_title="Sentiment Analysis with DistilBERT",
+    page_title="Sentiment Analysis",
     page_icon="🎬",
     layout="centered",
     initial_sidebar_state="expanded"
@@ -52,7 +52,7 @@ def load_model():
 # ============================================================================
 def main():
     # Header
-    st.title("🎬 Sentiment Analysis with DistilBERT")
+    st.title("🎬 Movie Review Sentiment Analysis ")
     st.markdown("---")
     
     # Load model
