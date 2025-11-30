@@ -1,0 +1,86 @@
+
+================================================================================
+📊 SENTIMENT ANALYSIS MODEL - TEST REPORT
+================================================================================
+
+Generated: 2025-11-29 17:17:16
+Model: ./models/sentiment-distilbert-imdb-final
+
+================================================================================
+📈 OVERALL STATISTICS
+================================================================================
+
+Total Tests:              19
+Correct Predictions:      12 (92.3%)
+Incorrect Predictions:    1 (7.7%)
+Ambiguous Cases (N/A):    6
+
+Average Confidence:       0.9097 (90.97%)
+High Confidence (>90%):   15 tests
+Low Confidence (<70%):    4 tests
+
+================================================================================
+📋 CATEGORY BREAKDOWN
+================================================================================
+
+Clear Positive:
+  Tests: 3
+  Accuracy: 2/3 (66.7%)
+
+Clear Negative:
+  Tests: 3
+  Accuracy: 3/3 (100.0%)
+
+Mixed Subtle:
+  Tests: 4
+  Accuracy: 2/2 (100.0%)
+
+Out Of Domain:
+  Tests: 4
+  Accuracy: N/A (ambiguous category)
+
+Slang Informal:
+  Tests: 5
+  Accuracy: 5/5 (100.0%)
+
+================================================================================
+❌ INCORRECT PREDICTIONS
+================================================================================
+
+Test CP3: Strong emotional positive response
+  Text: "I was blown away by every single scene. This film exceeded all my expectations and left me speechles..."
+  Expected: POSITIVE
+  Predicted: NEGATIVE (confidence: 0.9734)
+
+================================================================================
+⚠️  LOW CONFIDENCE PREDICTIONS (<70%)
+================================================================================
+
+Test MS4: Lukewarm approval with context
+  Text: "Not the best movie ever, but certainly not the worst. Perfectly fine for a rainy afternoon...."
+  Predicted: POSITIVE (confidence: 0.6835)
+
+Test OOD1: Factual statement about food
+  Text: "I ate pizza for dinner last night...."
+  Predicted: POSITIVE (confidence: 0.5019)
+
+Test OOD2: Weather information
+  Text: "The weather forecast predicts rain tomorrow afternoon with temperatures around 65 degrees...."
+  Predicted: POSITIVE (confidence: 0.5537)
+
+Test OOD3: Work instruction
+  Text: "Please remember to submit your report by Friday at 5 PM...."
+  Predicted: POSITIVE (confidence: 0.6764)
+
+================================================================================
+💡 KEY INSIGHTS
+================================================================================
+
+Strengths:
+  • Strong performance on clear sentiment (both positive and negative)
+  • High confidence in most predictions (15/19)
+
+Areas for Improvement:
+  • Detecting out-of-domain text (should show lower confidence)
+
+================================================================================

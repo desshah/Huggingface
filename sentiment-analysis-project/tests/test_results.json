@@ -1,0 +1,177 @@
+{
+  "timestamp": "2025-11-29T17:17:16.932093",
+  "model": "./models/sentiment-distilbert-imdb-final",
+  "results": [
+    {
+      "id": "CP1",
+      "text": "This movie was an absolute masterpiece! The best I've seen all year.",
+      "expected": "POSITIVE",
+      "predicted_label": "POSITIVE",
+      "confidence": 0.9981886744499207,
+      "description": "Superlative praise with enthusiasm",
+      "correct": "\u2705"
+    },
+    {
+      "id": "CP2",
+      "text": "Incredible performances, stunning visuals, and a deeply moving story. A true cinematic triumph!",
+      "expected": "POSITIVE",
+      "predicted_label": "POSITIVE",
+      "confidence": 0.9981879591941833,
+      "description": "Multiple positive attributes",
+      "correct": "\u2705"
+    },
+    {
+      "id": "CP3",
+      "text": "I was blown away by every single scene. This film exceeded all my expectations and left me speechless.",
+      "expected": "POSITIVE",
+      "predicted_label": "NEGATIVE",
+      "confidence": 0.9734062552452087,
+      "description": "Strong emotional positive response",
+      "correct": "\u274c"
+    },
+    {
+      "id": "CN1",
+      "text": "A completely worthless script and terrible acting. Save your money.",
+      "expected": "NEGATIVE",
+      "predicted_label": "NEGATIVE",
+      "confidence": 0.9985681772232056,
+      "description": "Direct criticism with warning",
+      "correct": "\u2705"
+    },
+    {
+      "id": "CN2",
+      "text": "This was painfully boring. I almost walked out of the theater. Two hours of my life I'll never get back.",
+      "expected": "NEGATIVE",
+      "predicted_label": "NEGATIVE",
+      "confidence": 0.9980402588844299,
+      "description": "Personal negative experience with regret",
+      "correct": "\u2705"
+    },
+    {
+      "id": "CN3",
+      "text": "Disaster of a film. Poor direction, weak plot, unconvincing performances. Absolutely disappointing.",
+      "expected": "NEGATIVE",
+      "predicted_label": "NEGATIVE",
+      "confidence": 0.9983810186386108,
+      "description": "Multiple critical points",
+      "correct": "\u2705"
+    },
+    {
+      "id": "MS1",
+      "text": "The plot was exciting, but the ending was a total letdown.",
+      "expected": "MIXED",
+      "predicted_label": "NEGATIVE",
+      "confidence": 0.9979427456855774,
+      "description": "Positive start, negative conclusion",
+      "correct": "N/A"
+    },
+    {
+      "id": "MS2",
+      "text": "Great acting saved an otherwise mediocre story. The visuals were stunning but couldn't fix the weak script.",
+      "expected": "MIXED",
+      "predicted_label": "NEGATIVE",
+      "confidence": 0.9914124011993408,
+      "description": "Balanced pros and cons",
+      "correct": "N/A"
+    },
+    {
+      "id": "MS3",
+      "text": "I wanted to love this film, and parts of it were brilliant, but overall it felt incomplete.",
+      "expected": "NEGATIVE",
+      "predicted_label": "NEGATIVE",
+      "confidence": 0.996533989906311,
+      "description": "Disappointed expectations despite some positives",
+      "correct": "\u2705"
+    },
+    {
+      "id": "MS4",
+      "text": "Not the best movie ever, but certainly not the worst. Perfectly fine for a rainy afternoon.",
+      "expected": "POSITIVE",
+      "predicted_label": "POSITIVE",
+      "confidence": 0.683454155921936,
+      "description": "Lukewarm approval with context",
+      "correct": "\u2705"
+    },
+    {
+      "id": "OOD1",
+      "text": "I ate pizza for dinner last night.",
+      "expected": "NEUTRAL",
+      "predicted_label": "POSITIVE",
+      "confidence": 0.5019059181213379,
+      "description": "Factual statement about food",
+      "correct": "N/A"
+    },
+    {
+      "id": "OOD2",
+      "text": "The weather forecast predicts rain tomorrow afternoon with temperatures around 65 degrees.",
+      "expected": "NEUTRAL",
+      "predicted_label": "POSITIVE",
+      "confidence": 0.5537495017051697,
+      "description": "Weather information",
+      "correct": "N/A"
+    },
+    {
+      "id": "OOD3",
+      "text": "Please remember to submit your report by Friday at 5 PM.",
+      "expected": "NEUTRAL",
+      "predicted_label": "POSITIVE",
+      "confidence": 0.6763520836830139,
+      "description": "Work instruction",
+      "correct": "N/A"
+    },
+    {
+      "id": "OOD4",
+      "text": "The capital of France is Paris, which is located in the northern part of the country.",
+      "expected": "NEUTRAL",
+      "predicted_label": "POSITIVE",
+      "confidence": 0.9471835494041443,
+      "description": "Geographic fact",
+      "correct": "N/A"
+    },
+    {
+      "id": "SI1",
+      "text": "OMG this film was fire \ud83d\udd25. So good.",
+      "expected": "POSITIVE",
+      "predicted_label": "POSITIVE",
+      "confidence": 0.9939490556716919,
+      "description": "Modern slang and emoji",
+      "correct": "\u2705"
+    },
+    {
+      "id": "SI2",
+      "text": "This movie slaps! Absolutely loved every minute. No cap fr fr \ud83d\udcaf",
+      "expected": "POSITIVE",
+      "predicted_label": "POSITIVE",
+      "confidence": 0.9974157810211182,
+      "description": "Gen Z slang expressions",
+      "correct": "\u2705"
+    },
+    {
+      "id": "SI3",
+      "text": "Ngl this was trash. Wasted my time smh \ud83d\ude24",
+      "expected": "NEGATIVE",
+      "predicted_label": "NEGATIVE",
+      "confidence": 0.9983417987823486,
+      "description": "Negative informal language with abbreviations",
+      "correct": "\u2705"
+    },
+    {
+      "id": "SI4",
+      "text": "Meh. It was mid. Nothing special tbh.",
+      "expected": "NEGATIVE",
+      "predicted_label": "NEGATIVE",
+      "confidence": 0.9919928312301636,
+      "description": "Lukewarm/mediocre slang",
+      "correct": "\u2705"
+    },
+    {
+      "id": "SI5",
+      "text": "YOOO this movie hit different! 10/10 would recommend!!!",
+      "expected": "POSITIVE",
+      "predicted_label": "POSITIVE",
+      "confidence": 0.9900131225585938,
+      "description": "Enthusiastic internet speak",
+      "correct": "\u2705"
+    }
+  ]
+}
