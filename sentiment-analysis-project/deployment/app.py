@@ -23,14 +23,16 @@ import torch
 def load_model():
     """Load the sentiment analysis model"""
     try:
-        # Load from Hugging Face Hub
+        # Load from Hugging Face Hub with authentication token if available
         model_id = "deshnaashok/sentiment-distilbert-imdb-modern"
         
         sentiment_pipeline = pipeline(
             "sentiment-analysis",
             model=model_id,
-            device=0 if torch.cuda.is_available() else -1
+            device=0 if torch.cuda.is_available() else -1,
+            use_auth_token=True  # Use HF Space's token
         )
+        print(f"✅ Successfully loaded custom model: {model_id}")
         return sentiment_pipeline, model_id
     except Exception as e:
         # Fallback to a base model if custom model not available
@@ -42,6 +44,7 @@ def load_model():
                 model=fallback_model,
                 device=0 if torch.cuda.is_available() else -1
             )
+            print(f"✅ Loaded fallback model: {fallback_model}")
             return sentiment_pipeline, fallback_model
         except Exception as fallback_error:
             print(f"❌ Error loading fallback model: {str(fallback_error)}")
@@ -135,7 +138,7 @@ examples = [
 ]
 
 # Create Gradio interface
-with gr.Blocks(title="🎬 Movie Sentiment Analysis", theme=gr.themes.Soft()) as demo:
+with gr.Blocks(title="🎬 Movie Sentiment Analysis") as demo:
     gr.Markdown(
         """
         # 🎬 Movie Review Sentiment Analysis
