@@ -1,5 +1,11 @@
+# Model files (too large for GitHub - hosted on Hugging Face Hub)
+*.safetensors
+*.pt
+*.bin
+*.pth
+*.onnx
+
 # Python
-*.pyc
 __pycache__/
 *.py[cod]
 *$py.class
@@ -7,46 +13,17 @@ __pycache__/
 .Python
 env/
 venv/
-ENV/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Virtual environments
-deployment/venv/
-
-# Model files (too large for git)
-models/*/checkpoint-*/
-*.bin
-*.safetensors
-*.pth
-*.pt
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-.DS_Store
+.env
 
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# Test outputs
-tests/test_report.txt
-tests/test_results.json
+# VS Code
+.vscode/
 
-# Logs
-*.log
+# macOS
+.DS_Store
+
+# Model checkpoints
+models/*/checkpoint-*/
+*.zip
